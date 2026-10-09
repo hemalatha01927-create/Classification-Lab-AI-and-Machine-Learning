@@ -1,0 +1,116 @@
+Build a complete, modern, responsive web application titled **“Classification Lab – AI & Machine Learning”** for the internship project “Build a Classification Model”.
+
+### 1. Technology
+
+* HTML5, CSS3, JavaScript
+* Chart.js for interactive charts
+* Implement the classification algorithm in JavaScript.
+* Use localStorage only if needed to save user settings or sample records.
+* The application must work without a backend or paid API.
+
+### 2. Modern UI Design
+
+* Professional AI/ML dashboard design.
+* White background with purple, blue, and teal accents.
+* Modern cards, rounded corners, subtle shadows, clean typography.
+* Responsive layout for desktop, tablet, and mobile.
+* Sidebar or top navigation with Dashboard, Dataset, Train Model, Evaluation, and Prediction sections.
+* Include loading states, success messages, validation errors, and empty states.
+
+### 3. Dashboard
+
+Display:
+
+* Total dataset records
+* Model accuracy
+* Selected classification algorithm
+* Number of target classes
+* Interactive chart showing dataset patterns
+* Recent prediction results
+
+### 4. Dataset Management
+
+Create a sample student performance dataset with these features:
+
+* Study hours per day
+* Attendance percentage
+* Previous test score
+* Target class: Pass or Needs Support
+
+Features:
+
+* Show records in a searchable table.
+* Add new records using a form.
+* Validate all inputs.
+* Allow users to delete sample records.
+* Update the dashboard when the dataset changes.
+* Clearly label the included data as educational sample data.
+
+### 5. Train Classification Model
+
+Implement a working **k-Nearest Neighbors (k-NN)** classification algorithm in JavaScript.
+
+Include:
+
+* Train Model button
+* Adjustable number of neighbors (k)
+* Feature normalization
+* Train/test split
+* Classification predictions based on nearest neighbors
+* Clear messages showing training status
+
+Do not display fake training results. Calculate results from the actual dataset and model predictions.
+
+### 6. Model Evaluation
+
+Calculate and display:
+
+* Accuracy
+* Precision
+* Recall
+* F1 score
+* Confusion matrix
+* Actual versus predicted chart
+
+Handle division-by-zero cases safely. Keep test records separate from training records during evaluation.
+
+### 7. Prediction Interface
+
+Create a form where users enter:
+
+* Study hours per day
+* Attendance percentage
+* Previous test score
+
+When the user clicks Predict:
+
+* Validate the inputs.
+* Use the trained model to predict Pass or Needs Support.
+* Display the predicted class clearly.
+* Show the proportion of nearest neighbors that voted for that class.
+* Display a short explanation of the result.
+* Show a helpful error if the model has not been trained.
+
+### 8. Code Quality
+
+* Keep HTML, CSS, and JavaScript in separate files.
+* Use clear variable and function names.
+* Add comments explaining the classification algorithm and evaluation metrics.
+* Ensure every button and form works.
+* Do not use placeholder buttons or fake interactions.
+* Include basic error handling and responsive CSS.
+
+### 9. Required Files
+
+Generate a complete project with:
+
+* index.html
+* style.css
+* script.js
+* README.md
+
+The README must explain the project, features, algorithm, evaluation metrics, technologies used, and how to run it in VS Code.
+
+### 10. Final Requirements
+
+Deliver a functional, beginner-friendly AI/ML classification dashboard suitable for an internship demonstration. Ensure the classification logic, charts, dataset table, evaluation metrics, and prediction interface work together correctly. Provide all source code and instructions for running the project locally.

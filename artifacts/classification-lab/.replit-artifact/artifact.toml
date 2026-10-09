@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Classification Lab – AI & Machine Learning"
+description = "A browser-only internship demo for managing student performance data, training a normalized k-nearest-neighbors classifier, evaluating real predictions, and exploring student support predictions."
+version = "1.0.0"
+id = "artifacts/classification-lab"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24196
+
+[services.development]
+run = "pnpm --filter @workspace/classification-lab run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/classification-lab", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/classification-lab/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24196"
+BASE_PATH = "/"
